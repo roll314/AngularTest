@@ -1,0 +1,5 @@
+<button mat-button (click)="back()">Back</button>
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<app-user-data *ngIf="!isLoading" [user]="user"></app-user-data>
